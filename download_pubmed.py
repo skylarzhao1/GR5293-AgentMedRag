@@ -4,8 +4,7 @@ Python script to download PubMed `N_max` articles abstracts for a user's specifi
     python download_pubmed.py \
      --output_json $PATH_TO_JSON_FILE
      --num_articles 1000 \
-     --start_date "2023/11/01" \
-     --end_date "2023/11/30"
+  
 
 """
 from argparse import ArgumentParser
@@ -39,8 +38,8 @@ def fetch_details(id_list):
 
 def get_pubmed_data(
     output_json_file: str, 
-    start_date: str = "2023/12/1",
-    end_date: str = "2023/12/31",
+    start_date: str = "2024/10/1",
+    end_date: str = "2025/3/1",
     email: str = 'mehdi.iraqui@gmail.com', 
     max_num_articles: int = 10000
 ):

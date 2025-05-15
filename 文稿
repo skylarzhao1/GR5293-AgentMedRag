@@ -1,0 +1,19 @@
+1. Introduction
+
+2. Data
+    PubMed 是由美国国家医学图书馆（National Library of Medicine, NLM）下属的国家生物技术信息中心（NCBI）开发和维护的免费生物医学文献检索平台。它主要用于检索 MEDLINE 数据库中的生命科学和生物医学文献摘要和引用信息。
+自 1997 年起，PubMed 向全球用户免费开放，成为生物医学领域最重要的文献检索工具之一。
+    随机选取2400篇from 2024.1-2025.1，提取abstract
+
+1. ChormaDB
+    ChromaDB 是一个本地部署、轻量高效的开源向量数据库，支持文本与元数据的存储与相似度检索，广泛用于 LLM 应用中的知识增强（RAG）场景。
+    why this？
+
+2. 与 mistral-7B 类似的大模型候选
+    -1.	LLaMA 2 / LLaMA 3 (Meta AI)
+        参数规模：7B、13B、70B
+    -2. Mixtral 8x7B (Mistral AI)
+        参数规模：8 个 7B 专家模型，总计约 46.7B 参数
+	    特点：采用稀疏专家混合架构（MoE），在保持高性能的同时提高推理效率。
+
+3. 

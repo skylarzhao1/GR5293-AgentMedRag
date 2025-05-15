@@ -1,3 +1,0 @@
-
-
-medical article answer

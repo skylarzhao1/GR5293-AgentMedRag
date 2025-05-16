@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 MAY 2025 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 MAY 2025 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/suchuyang/Project/GitHub/GR5293finalproject-Rag/Latex/final_report.tex
-(/Users/suchuyang/Project/GitHub/GR5293finalproject-Rag/Latex/final_report.tex
+**final_report.tex
+(./final_report.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
@@ -17,7 +17,8 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmpcountB=\count197
 \@IEEEtrantmpcountC=\count198
 \@IEEEtrantmptoksA=\toks17
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -32,42 +33,52 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 \IEEEquantizedlength=\dimen148
 \IEEEquantizedlengthdiff=\dimen149
 \IEEEquantizedtextheightdiff=\dimen150
@@ -106,21 +117,25 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen165
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen166
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count277
@@ -170,83 +185,111 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen174
 \Gin@req@width=\dimen175
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
- (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
+))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
- (/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count289
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count290
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
 )
 \@linkdim=\dimen176
 \Hy@linkcounter=\count291
 \Hy@pagecounter=\count292
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count293
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -259,16 +302,20 @@ Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
 \c@Hy@tempcnt=\count294
- (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen177
- (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
 \Fld@menulength=\count295
 \Field@Width=\dimen178
@@ -280,7 +327,8 @@ Package hyperref Info: backreferencing OFF on input line 6057.
 Package hyperref Info: Link coloring OFF on input line 6062.
 Package hyperref Info: Link coloring with OCG OFF on input line 6067.
 Package hyperref Info: PDF/A mode OFF on input line 6072.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -289,20 +337,26 @@ package with kernel methods
 \c@Hfootnote=\count298
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
- (/usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
 with kernel methods
 )
 \Fld@listcount=\count299
 \c@bookmark@seq@number=\count300
- (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
 )
 \Hy@SectionHShift=\skip55
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/lmodern.sty
@@ -339,9 +393,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \col@sep=\dimen180
 \ar@mcellbox=\box56
@@ -358,7 +414,8 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \TX@delta=\dimen186
 \TX@cols=\count301
 \TX@ftn=\toks27
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen187
 \lightrulewidth=\dimen188
@@ -378,323 +435,198 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count305
 \@thisrulewidth=\dimen199
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 21.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count306
-\l__pdf_internal_box=\box58
+(/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip58
+\enit@outerparindent=\dimen256
+\enit@toks=\toks28
+\enit@inbox=\box58
+\enit@count@id=\count306
+\enitdp@description=\count307
 )
-No file final_report.aux.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+0.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box59
+)
+(./final_report.aux)
 \openout1 = `final_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen256
-\scratchbox=\box59
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen257
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count309
+\scratchdimen=\dimen257
+\scratchbox=\box60
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen258
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks30
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
 ))
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 20.
+
+(./final_report.out) (./final_report.out)
 \@outlinefile=\write3
 \openout3 = `final_report.out'.
 
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 23.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+3.
 
-Runaway argument?
-z3420@columbia.edu \relax \hfil \@IEEEcurfontSAVE \@IEEEauthorstrutrule 
-! Forbidden control sequence found while scanning use of \check@nocorr@.
-<inserted text> 
-                \par 
-l.24 \begin
-           {abstract}
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+23.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.24 \begin
-           {abstract}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+23.
 
-! Undefined control sequence.
-\text@command ...e \check@nocorr@ #1\nocorr \@nil 
-                                                  \fi \fi 
-l.24 \begin
-           {abstract}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.69997> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.5> on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 24.
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+
+
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 23.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 23.
+
+** WARNING: \thanks is locked out when in conference mode (line 23).
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+26.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.24 \begin
-           {abstract}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \crcr.
-\IEEEauthorblockA ...lockAinterlinespace }#1\crcr 
-                                                  \ifCLASSOPTIONtransmag \gd...
-l.24 \begin
-           {abstract}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \crcr.
-\end@IEEEauthorhalign ->\crcr 
-                              \egroup \egroup 
-l.24 \begin
-           {abstract}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten \endgroup.
-\end@IEEEauthorhalign ->\crcr \egroup \egroup 
-                                              
-l.24 \begin
-           {abstract}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-Runaway argument?
-z3420@columbia.edu \relax \hfil \@IEEEcurfontSAVE \@IEEEauthorstrutrule 
-! Forbidden control sequence found while scanning use of \check@nocorr@.
-<inserted text> 
-                \par 
-l.24 \begin
-           {abstract}
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.24 \begin
-           {abstract}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-\text@command ...e \check@nocorr@ #1\nocorr \@nil 
-                                                  \fi \fi 
-l.24 \begin
-           {abstract}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.24 \begin
-           {abstract}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \crcr.
-\IEEEauthorblockA ...lockAinterlinespace }#1\crcr 
-                                                  \ifCLASSOPTIONtransmag \gd...
-l.24 \begin
-           {abstract}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \crcr.
-\end@IEEEauthorhalign ->\crcr 
-                              \egroup \egroup 
-l.24 \begin
-           {abstract}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten \endgroup.
-\end@IEEEauthorhalign ->\crcr \egroup \egroup 
-                                              
-l.24 \begin
-           {abstract}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-Runaway argument?
-z3420@columbia.edu \relax \hfil \@IEEEcurfontSAVE \@IEEEauthorstrutrule 
-! Forbidden control sequence found while scanning use of \check@nocorr@.
-<inserted text> 
-                \par 
-l.24 \begin
-           {abstract}
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.24 \begin
-           {abstract}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-\text@command ...e \check@nocorr@ #1\nocorr \@nil 
-                                                  \fi \fi 
-l.24 \begin
-           {abstract}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.24 \begin
-           {abstract}
-I'm guessing that you meant to end an alignment here.
-
-! Misplaced \crcr.
-\IEEEauthorblockA ...lockAinterlinespace }#1\crcr 
-                                                  \ifCLASSOPTIONtransmag \gd...
-l.24 \begin
-           {abstract}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced \crcr.
-\end@IEEEauthorhalign ->\crcr 
-                              \egroup \egroup 
-l.24 \begin
-           {abstract}
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Extra }, or forgotten \endgroup.
-\end@IEEEauthorhalign ->\crcr \egroup \egroup 
-                                              
-l.24 \begin
-           {abstract}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 26.
 
 
-LaTeX Warning: Citation `ragas2023' on page 1 undefined on input line 25.
+LaTeX Font Warning: Font shape `OT1/lmr/bx/sc' undefined
+(Font)              using `OT1/lmr/bx/n' instead on input line 26.
 
-(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd) (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd) (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd)
-Underfull \hbox (badness 3735) in paragraph at lines 54--54
-[]|\OT1/lmr/bx/n/8 Most Rel-e-vant Doc-u-
+
+Underfull \hbox (badness 1509) in paragraph at lines 23--28
+\OT1/lmr/bx/n/9 sages are sup-plied to \OT1/lmtt/b/n/9 Mistral-7B-Instruct \OT1
+/lmr/bx/n/9 un-der a
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 31.
+
+Underfull \hbox (badness 3547) in paragraph at lines 29--33
+\OT1/lmr/bx/it/9 ci-sion \OT1/lmr/bx/n/9 and \OT1/lmr/bx/it/9 Con-text Re-call\
+OT1/lmr/bx/n/9 |with gen-er-a-tion met-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-[]|\OT1/lmr/m/n/8 Sonodynamic ther-apy
+Underfull \hbox (badness 2050) in paragraph at lines 29--33
+\OT1/lmr/bx/n/9 rics|\OT1/lmr/bx/it/9 Answer Rel-e-vancy \OT1/lmr/bx/n/9 and \O
+T1/lmr/bx/it/9 Faith-ful-ness\OT1/lmr/bx/n/9 . On four
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-\OT1/lmr/m/n/8 (SDT) has emerged
+Underfull \hbox (badness 1721) in paragraph at lines 34--39
+[]\OT1/lmr/bx/n/9 Future work tar-gets (i) scal-ing to larger back-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-\OT1/lmr/m/n/8 as a cutting[]edge
+Underfull \hbox (badness 1365) in paragraph at lines 34--39
+\OT1/lmr/bx/n/9 ously up-dated, trust-wor-thy as-sis-tant for evidence-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-\OT1/lmr/m/n/8 strat-egy for com-bat-ing
+
+
+Underfull \hbox (badness 6348) in paragraph at lines 57--58
+[]\OT1/lmr/m/n/10 Our sys-tem fol-lows a domain-adapted \OT1/lmr/m/it/10 Retrie
+val-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-\OT1/lmr/m/n/8 multidrug[]resistant
+Underfull \hbox (badness 2213) in paragraph at lines 63--66
+\OT1/lmr/m/n/10 meta-data, are stored in a lo-cal \OT1/lmr/m/sc/10 Chroma \OT1/
+lmr/m/n/10 vec-tor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
-[]|\OT1/lmr/m/n/8 Calprotectin or-
+
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/l
+ocal/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2
+025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}
+
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/
+texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
+25/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
+\OT1/lmr/m/n/10 reranker (\OT1/lmtt/m/n/10 BAAI/bge-reranker-base\OT1/lmr/m/n/1
+0 ). The Top{4
  []
+
+
 
 
 ! LaTeX Error: Unicode character   (U+202F)
@@ -704,11 +636,10 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 This suggests our 7 
-                           B‑parameter model, together with a 2 400‑do...
-You may provide a definition with
-\DeclareUnicodeCharacter 
+l.170 This suggests our 7 
+                            B‑parameter model, together with a 2 400‑d...
 
+? 
 
 ! LaTeX Error: Unicode character   (U+202F)
                not set up for use with LaTeX.
@@ -717,137 +648,205 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59 ...�B‑parameter model, together with a 2 
+l.170 ...B‑parameter model, together with a 2 
                                                   400‑document corpus, is ...
-You may provide a definition with
-\DeclareUnicodeCharacter 
 
+? 
 
-Underfull \vbox (badness 1924) has occurred while \output is active []
-
-
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-[]|\OT1/lmr/bx/n/8 Context
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
+[]\OT1/lmr/m/it/10 ``How does son-o-dy-namic ther-apy (SDT) dif-fer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/bx/n/8 Sum-
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
+\OT1/lmr/m/it/10 from con-ven-tional an-tibi-otics in com-bat-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/bx/n/8 mary
+Underfull \hbox (badness 5622) in paragraph at lines 197--201
+\OT1/lmr/m/n/10 cor-rectly con-trasted ROS[]mediated dam-age with
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/bx/n/8 (trun-
- []
-
-
-Underfull \hbox (badness 4193) in paragraph at lines 78--78
-[]|\OT1/lmr/m/n/8 SDT has
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 emerged
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 as a
- []
-
-
-Overfull \hbox (9.16537pt too wide) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 cutting[]edge
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 strat-
- []
-
-
-Overfull \hbox (9.64438pt too wide) in paragraph at lines 78--78
-[]|\OT1/lmr/m/n/8 Calprotectin
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 het-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 erodimer
- []
-
-
-Overfull \hbox (36.31053pt too wide) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 S100A8/S100A9 ...| 
- []
-
-
-Overfull \hbox (1.18336pt too wide) in paragraph at lines 78--78
-[]|\OT1/lmr/m/n/8 Vestibular
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 mi-graine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 (VM) as
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 lead-ing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-[]|\OT1/lmr/m/n/8 Ni
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 clus-ters
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 im-prove
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 hy-dro-gen
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 evo-lu-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\OT1/lmr/m/n/8 re-ac-
+Underfull \hbox (badness 1540) in paragraph at lines 197--201
+\OT1/lmr/m/n/10 an-tibi-otic re-sis-tance path-ways, fully sup-ported by
  []
 
 
 
-[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 211--215
+[]\OT1/lmr/m/it/10 ``How do nickel clus-ters im-prove the
+ []
 
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc}] (./final_report.bbl)
+Underfull \hbox (badness 5147) in paragraph at lines 211--215
+\OT1/lmr/bx/n/10 Faithfulness 0.54 | Rel-e-vancy 0.96. \OT1/lmr/m/n/10 Core
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 230--238
+[]\OT1/lmr/m/n/10 We pre-sented \OT1/lmr/m/sc/10 Agent-MedRAG\OT1/lmr/m/n/10 , 
+a domain-specific
+ []
+
+
+
+
+Underfull \hbox (badness 4859) in paragraph at lines 249--252
+\OT1/lmr/m/n/10 Implement stream-ing in-ges-tion and dy-namic re-
+ []
+
+
+Underfull \hbox (badness 7291) in paragraph at lines 253--257
+\OT1/lmr/m/n/10 Incorporate an evidence-grading frame-work (e.g.
+ []
+
+(./final_report.bbl
+
+! LaTeX Error: Unicode character 评 (U+8BC4)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评
+                估新工具 ragas 的使用与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 估 (U+4F30)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估
+                   新工具 ragas 的使用与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 新 (U+65B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新
+                      工具 ragas 的使用与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 工 (U+5DE5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新工
+                         具 ragas 的使用与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 具 (U+5177)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新工具
+                             ragas 的使用与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 的 (U+7684)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新工具 ragas 的
+                                      使用与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 使 (U+4F7F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新工具 ragas 的使
+                                         用与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 用 (U+7528)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新工具 ragas 的使用
+                                            与指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 与 (U+4E0E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新工具 ragas 的使用与
+                                               指标详解”,''
+? 
+
+! LaTeX Error: Unicode character 指 (U+6307)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ``“rag评估新工具 ragas 的使用与指
+                                                  标详解”,''
+? 
+
+! LaTeX Error: Unicode character 标 (U+6807)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...ag评估新工具 ragas 的使用与指标
+                                                  详解”,''
+? 
+
+! LaTeX Error: Unicode character 详 (U+8BE6)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...��估新工具 ragas 的使用与指标详
+                                                  解”,''
+? 
+
+! LaTeX Error: Unicode character 解 (U+89E3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...��新工具 ragas 的使用与指标详解
+                                                  ”,''
+? 
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -861,44 +860,50 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-
-
-[2
-
-] (./final_report.aux)
+[3] (./final_report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `final_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `final_report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A96E9A7374C5F2FB298D5B76BF96CB74;648.
+Package rerunfilecheck Info: File `final_report.out' has not changed.
+(rerunfilecheck)             Checksum: 268E87E64E1C6845283DC6389A72510D;2079.
  ) 
 Here is how much of TeX's memory you used:
- 10906 strings out of 473190
- 171376 string characters out of 5715801
- 585879 words of memory out of 5000000
- 33989 multiletter control sequences out of 15000+600000
- 735768 words of font info for 134 fonts, out of 8000000 for 9000
+ 11378 strings out of 473190
+ 178950 string characters out of 5715801
+ 592137 words of memory out of 5000000
+ 34409 multiletter control sequences out of 15000+600000
+ 748083 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,646b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on final_report.pdf (2 pages, 307806 bytes).
+ 75i,14n,79p,596b,583s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/lo
+cal/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive
+/2025/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/texlive/2025/texmf
+-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2025/texmf-dist/fon
+ts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/
+public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/
+lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local
+/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-di
+st/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/ty
+pe1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/l
+m/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local
+/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2
+025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2025/texmf-d
+ist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/t
+ype1/public/lm/lmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public
+/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10
+.pfb>
+Output written on final_report.pdf (3 pages, 423072 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

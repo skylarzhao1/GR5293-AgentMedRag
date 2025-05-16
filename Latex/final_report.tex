@@ -6,24 +6,36 @@
 \usepackage{lmodern}  % 更现代的字体
 \usepackage{tabularx}
 \usepackage{booktabs}
+\usepackage{url}
+\usepackage{enumitem} % 添加此行
 
 \title{Agent-MedRAG: Design and Evaluation of an Agent-Driven Retrieval-Augmented Question Answering System Based on Biomedical Literature}
 \author{
-  \IEEEauthorblockN{Xinglan Zhao \& Chuyang Su}
-  \IEEEauthorblockA{
-    Columbia University\\
-    New York, NY, USA\\
-    \texttt{xz3420@columbia.edu & cs4570@columbia.edu}
-    \texttt{GitHub Link: https://github.com/skylarzhao1/GR5293-AgentMedRag}
-  }
+  \IEEEauthorblockN{Xinglan Zhao\IEEEauthorrefmark{1} \qquad Chuyang Su\IEEEauthorrefmark{2}}
+  \IEEEauthorblockA{Graduate School of Arts and Sciences, Columbia University, New York, NY, USA}
+  \IEEEauthorblockA{\IEEEauthorrefmark{1}xz3420@columbia.edu \quad \IEEEauthorrefmark{2}cs4570@columbia.edu}
+  \thanks{GitHub: \url{https://github.com/skylarzhao1/GR5293-AgentMedRag}}
 }
 
 \begin{document}
 
 \maketitle
 \begin{abstract}
-    As shown in recent work~\cite{ragas2023}, ...
-This paper introduces a domain-specific Retrieval-Augmented Generation (RAG) agent designed for the biomedical field. The system addresses challenges in parsing, synthesizing, and reasoning over complex medical literature, leveraging recent advancements in large language models and structured retrieval pipelines.
+The rapid growth of biomedical literature makes it difficult for clinicians and researchers to locate and synthesise relevant evidence in a timely manner.  
+We present \textbf{Agent-MedRAG}, a lightweight Retrieval--Augmented Generation (RAG) agent that reads PubMed abstracts, retrieves citable passages, and produces evidence-grounded answers to biomedical questions.  
+A corpus of 2\,400 PubMed articles (Jan.\ 2024--Jan.\ 2025) is split into 200-token chunks with 64-token overlap, embedded by \texttt{BGE-large-en-v1.5}, and indexed in a local \textsc{Chroma} vector store.  
+Queries are semantically retrieved (Top–\emph{k}) and re-ranked with a cross-encoder (\texttt{bge-reranker-base}); the top four passages are supplied to \texttt{Mistral-7B-Instruct} under a prompt that forbids external knowledge.
+
+Evaluation combines retrieval metrics—\emph{Context Precision} and \emph{Context Recall}—with generation metrics—\emph{Answer Relevancy} and \emph{Faithfulness}.  
+On four representative biomedical queries the agent attains precision\,=\,recall\,=\,1.00, demonstrating exhaustive yet noise-free retrieval.  
+Relevancy remains high ($\ge0.93$ on three queries), whereas Faithfulness exposes residual hallucination (0.57/0.54 on two complex questions), identifying generation as the current bottleneck.  
+Qualitative analysis shows strengths in mechanistic reasoning and negation handling but highlights failures when reranking surfaces less-salient context.
+
+Future work targets (i)~scaling to larger backbones (e.g.\ \texttt{LLaMA-3-70B}) for deeper clinical reasoning; 
+(ii)~adding conversational memory for multi-turn refinement; 
+(iii)~implementing incremental indexing for real-time literature updates; and 
+(iv)~integrating evidence-grading frameworks such as GRADE to rank outputs by confidence level.  
+These extensions aim to transform Agent-MedRAG into a continuously updated, trustworthy assistant for evidence-based medicine.
 \end{abstract}
 
 \section{Motivation and Objectives}
@@ -34,24 +46,123 @@ Recent advances in large language models (LLMs) and Retrieval-Augmented Generati
 
 To this end, the primary goal of our project is to design and implement a domain-specific RAG agent tailored to the biomedical domain. The system will be capable of parsing and synthesizing multiple types of medical documents---including clinical studies, case reports, and meta-analyses---while ensuring the interpretability and factual correctness of its outputs. In addition, the system will incorporate quality control mechanisms to rank and filter evidence, thereby promoting reliability and clinical relevance in retrieved responses.
 
+\section{Methodology}
+\subsection{Data}
+We adopt \textbf{PubMed}\cite{pubmed_site}, a public repository of biomedical literature, as our data source.
+Using a Python script, we randomly sampled 2\,400 articles published between \textbf{Jan.~2024 and Jan.~2025}.  
+For each article we extracted the \emph{title}, \emph{abstract}, and study \emph{start/end dates}.  
+This corpus is used to train an agent that reads abstracts and extracts key medical information. We employ \texttt{Mistral-7B-Instruct}\cite{mistral7b_announce} as the primary generator.
+
+\subsection{Model Architecture and Implementation}
+Our system follows a domain-adapted \emph{Retrieval-Augmented Generation (RAG)} pipeline\cite{zhihu_ragas}:
+
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Chunking.}  \\
+        Abstracts are split into chunks of $\le200$ tokens with an overlap of 64 tokens, preventing loss of cross-sentence semantics.
+
+  \item \textbf{Embedding \& Indexing.}  \\
+        Each chunk is encoded with \texttt{BAAI/bge-large-en-v1.5} (BGE).  
+        The dense vectors, along with raw text and metadata, are stored in a local \textsc{Chroma} vector database.
+
+  \item \textbf{Initial Retrieval.}  \\
+        A query is embedded by the same BGE model; cosine similarity returns the Top–$k$ chunks.  
+        We tuned $k\!\in\!\{13,10,8,6\}$ to balance recall and latency.
+
+  \item \textbf{Re-ranking.}  \\
+        The retrieved set is re-scored with a cross-encoder reranker (\texttt{BAAI/bge-reranker-base}).  
+        The Top–4 chunks by reranker score are selected.
+
+  \item \textbf{Answer Generation.}  \\
+        We employ \texttt{Mistral-7B-Instruct} as the primary generator and \texttt{LLaMA-2-7B-chat} for ablation.  
+        A prompt template enforces: “\emph{Answer strictly from provided context; no external information; $\le100$ words},” ensuring high-precision medical answers.
+\end{enumerate}
+
+
+\section{Metric Definitions and Interpretation}\cite{ragas_metrics}
+We evaluate the system along two complementary axes: \emph{retrieval quality}
+and \emph{generation quality}.  Retrieval is assessed with \textbf{Context~Precision}
+and \textbf{Context~Recall}; generation is assessed with \textbf{Answer~Relevancy}
+and \textbf{Faithfulness}.  Formal definitions and intuitive explanations follow.
+
+\subsection{Retrieval Metrics}
+
+\paragraph{Context Precision@K.}
+\begin{equation}
+  \operatorname{CPrec}@K =
+  \frac{\displaystyle\sum_{k=1}^{K}\bigl(\operatorname{Precision}@k \times v_k\bigr)}
+       {\text{\# relevant items in the top } K \text{ results}}
+  \label{eq:cprec}
+\end{equation}
+where
+\begin{equation}
+  \operatorname{Precision}@k=
+  \frac{\text{true positives}@k}
+       {\text{true positives}@k+\text{false positives}@k}.
+  \label{eq:precatk}
+\end{equation}
+
+\textbf{Interpretation.}  Context~Precision measures how much of the retrieved
+context is actually useful.  It ignores missing evidence and penalises
+irrelevant or redundant passages; the more focused the retrieval, the higher
+the score.
+
+\paragraph{Context Recall.}
+\begin{equation}
+  \operatorname{CRecall}=
+  \frac{\text{\# Supported Claims}}{\text{\# Total Claims}}
+  \label{eq:crecall}
+\end{equation}
+
+\textbf{Interpretation.}  Context~Recall asks whether the retrieval covers
+\emph{all} evidence needed to answer.  If every factual element in the reference
+answer can be traced back to retrieved passages, recall reaches~1.0.
+
+\subsection{Generation Metrics}
+
+\paragraph{Answer Relevancy.}
+Following \textsc{ragas}, we compute the semantic similarity between the system
+answer and the reference answer with a sentence–embedding model.
+A score of~1.0 indicates perfect semantic overlap.
+
+\paragraph{Faithfulness.}
+\begin{equation}
+    \text{Faithfulness} =
+    \frac{\text{\#\,Answer claims supported by retrieved}}
+    {\text{\#\,Total claims in the answer}}
+\end{equation}
+
+\textbf{Interpretation.}  Faithfulness measures factual consistency between the
+generated answer and the retrieved evidence; it detects hallucinations
+introduced by the generator.
+
+\subsection{Experimental Observation}
+In our four–question experiment, both \emph{Context~Precision} and
+\emph{Context~Recall} reach~1.0 (Table~\ref{tab:retrieval}), indicating that the
+agent retrieved exactly the information required—nothing more, nothing less.
+This suggests that even with a 7 B-parameter backbone, the agent fully utilises
+the 2\,400-document corpus.  Generation metrics
+(Table~\ref{tab:generation}) show high relevancy overall but reveal faithfulness
+drops on two questions, pointing to numeric hallucination at the generation
+stage.
+
 \section{Results and Interpretation}
 
 \subsection{Retrieval Results}
 
 \begin{table}[ht]
-    \centering
-    \caption{Retrieval metrics on 4-question sample}
-    \label{tab:retrieval}
-    \begin{tabularx}{\linewidth}{lccX}
+  \caption{Retrieval metrics on 4-question sample}
+  \label{tab:retrieval}
+  \centering
+  \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcc}
     \toprule
-    \textbf{Question} & \textbf{Precision} & \textbf{Recall} & \textbf{Most Relevant Document Summary (truncated)} \\
+    \textbf{Question} & \textbf{Precision} & \textbf{Recall}\\
     \midrule
-    Q1 & 1.00 & 1.00 & Sonodynamic therapy (SDT) has emerged as a cutting‑edge strategy for combating multidrug‑resistant bacteria. \\[2pt]
-    Q2 & 1.00 & 1.00 & Calprotectin orthologs/paralogs have been identified in zebrafish … \\[2pt]
-    Q3 & 1.00 & 1.00 & Vestibular migraine (VM) is a leading cause of recurrent vertigo episodes … \\[2pt]
-    Q4 & 1.00 & 1.00 & Ni clusters act as transition materials between bulk and individual atoms, enhancing HER … \\
+    Q1 & 1.00 & 1.00\\
+    Q2 & 1.00 & 1.00\\
+    Q3 & 1.00 & 1.00\\
+    Q4 & 1.00 & 1.00\\
     \bottomrule
-    \end{tabularx}
+  \end{tabular*}
 \end{table}
 
 \paragraph{Interpretation.}
@@ -66,26 +177,84 @@ This suggests our 7 B‑parameter model, together with a 2 400‑document co
     \centering
     \caption{Generation metrics on 4-question sample}
     \label{tab:generation}
-    \begin{tabularx}{\linewidth}{lccX}
+    \begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lcc}
     \toprule
-    \textbf{Question} & \textbf{Faithfulness} & \textbf{Answer Relevancy} & \textbf{Context Summary (truncated)} \\
+    \textbf{Question} & \textbf{Faithfulness} & \textbf{Answer Relevancy} \\
     \midrule
-    Q1 & 0.89 & 1.00 & SDT has emerged as a cutting‑edge strategy … \\[2pt]
-    Q2 & 0.88 & 0.93 & Calprotectin heterodimer S100A8/S100A9 … \\[2pt]
-    Q3 & 0.57 & 0.00 & Vestibular migraine (VM) as leading cause … \\[2pt]
-    Q4 & 0.54 & 0.96 & Ni clusters improve hydrogen evolution reaction … \\
+    Q1 & 0.89 & 1.00 \\[2pt]
+    Q2 & 0.88 & 0.93 \\[2pt]
+    Q3 & 0.57 & 0.00 \\[2pt]
+    Q4 & 0.54 & 0.96 \\
     \bottomrule
-    \end{tabularx}
+    \end{tabular*}
 \end{table}
 
-\paragraph{Interpretation.}
-While answer‑relevancy remains high for three out of four queries, faithfulness notably degrades on Q3–Q4.  
-Manual inspection shows numeric values were paraphrased incorrectly in these answers, even though the correct evidence was present—highlighting generation‑layer hallucination.
+
+\paragraph{Qualitative Analysis.}
+To understand how the numerical metrics translate into real behaviour, we analysed four representative queries covering mechanism comparison, negation, neuro‑imaging evidence synthesis, and cross‑domain catalysis:
+
+\begin{description}[leftmargin=1.5em,labelindent=0em]
+  \item[\textbf{Q1}] \emph{``How does sonodynamic therapy (SDT) differ from conventional antibiotics in combating multidrug‑resistant infections?''}\\
+    \textbf{Faithfulness 0.89 — Relevancy 1.00.}  
+    The answer correctly contrasted ROS‑mediated damage with antibiotic resistance pathways, fully supported by context.  
+    \textit{Insight:} the agent excels at mechanism‑based biomedical explanations.
+
+  \item[\textbf{Q2}] \emph{``Does zebrafish possess an ortholog/paralog of mammalian calprotectin?''}\\
+    \textbf{Faithfulness 0.88 — Relevancy 0.93.}  
+    The model produced the correct negative conclusion while preserving mechanistic detail, showing it can handle negation and complex homology reasoning.
+
+  \item[\textbf{Q3}] \emph{``What is the current understanding of gray‑matter alterations in vestibular migraine?''}\\
+    \textbf{Faithfulness 0.57 — Relevancy 0.00.}  
+    The response wandered into unrelated depression literature; only partial claims were context‑supported.  
+    \textit{Diagnosis:} recall was perfect, yet reranking failed to surface the most pertinent VBM passages, and the generator hallucinated unsupported claims.
+
+  \item[\textbf{Q4}] \emph{``How do nickel clusters improve the hydrogen‑evolution reaction (HER)?''}\\
+    \textbf{Faithfulness 0.54 — Relevancy 0.96.}  
+    Core catalytic mechanisms were captured, but half the mechanistic claims lacked explicit support.  
+    \textit{Lesson:} cross‑disciplinary prompts are answered fluently, but require stricter citation control.
+\end{description}
+
+\paragraph{Take‑aways.}
+\begin{itemize}
+  \item Perfect retrieval (\textbf{precision = recall = 1.0}) guarantees the evidence pool is complete, yet generation may still hallucinate --- explaining the divergence between Context Recall and Faithfulness.
+  \item High Relevancy ($\ge0.93$ on three queries) confirms intent alignment, but Faithfulness exposes factual fragility when the generator reformulates numeric or domain‑specific detail.
+  \item Failure analysis (Q3) suggests reranker weight tuning and citation‑aware decoding as immediate avenues for improvement.
+\end{itemize}
 
 \paragraph{Implications.}
 Perfect retrieval ensures clinicians are not burdened by irrelevant literature, but generation quality still limits direct clinical adoption.  
 We plan to add citation‑aware decoding and numeric consistency checks to mitigate remaining hallucinations (see Future Work).
 
+\section{Conclusion}
+
+We presented \textsc{Agent-MedRAG}, a domain-specific retrieval-augmented
+agent that achieves \textbf{perfect} context precision and recall on a
+2\,400-document PubMed subset using only a 7-B-parameter backbone.  Generation
+quality is generally high (answer relevancy $\ge0.93$ on three of four queries),
+but faithfulness analysis reveals residual hallucination when numeric or
+domain-specific details are reformulated.  Overall, the system demonstrates
+that lightweight RAG pipelines can deliver evidence-grounded biomedical answers,
+with hallucination control emerging as the primary path for improvement.
+
+\section{Future Work}
+\begin{enumerate}[leftmargin=*]
+  \item \textbf{Scaling to Larger Language Models for Improved Clinical Reasoning}\\
+        Integrate stronger backbones such as LLaMA-3-70B or GPT-4–class models to
+        enhance mechanistic reasoning and interpretability in complex contexts.
+
+  \item \textbf{Conversational Memory and Multi-Turn Questioning}\\
+        Add a memory module and dialogue interface so users can iteratively
+        refine queries, progressively converging on precise clinical answers.
+
+  \item \textbf{Incremental Indexing and Robustness to New Literature}\\
+        Implement streaming ingestion and dynamic re-indexing so newly published
+        studies are assimilated without full re-embedding, keeping knowledge fresh.
+
+  \item \textbf{Evidence Grading and Literature Prioritisation}\\
+        Incorporate an evidence-grading framework (e.g.\ GRADE) to rank
+        retrieved literature by confidence level, giving clinicians a clear
+        quality signal.
+\end{enumerate}
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}

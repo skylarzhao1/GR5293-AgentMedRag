@@ -1,9 +1,10 @@
 
-## Data Pipeline
+##  Pipeline
 
-1. **Data Extraction**:
+1. **Data Extraction and main file **:
    - Run `download_pubmed.py` to fetch 2400 medical articles from PubMed
    - Output stored as JSON files
+   - The main file is in the May15_rag_mainscript.ipynb
 
 2. **QA Pair Generation**:
    - `generatequery.ipynb` creates ground truth QA pairs
@@ -16,6 +17,8 @@
      }
      ```
    - Output saved to `googledrive-finalproject/generated_qa_pairs.json`
+
+   
 
 ## Environment Setup
 
